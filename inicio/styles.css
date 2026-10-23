@@ -1,0 +1,131 @@
+/* Reset e Estilos Globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b0d3a; /* Fundo azul-escuro */
+  color: #ffffff;
+}
+
+/* Cabeçalho / Navbar */
+.navbar {
+  background-color: #ff8a22; /* Laranja do cabeçalho */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre a imagem pecas.png e o texto */
+  font-weight: bold;
+  font-size: 13px;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menu-icon {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+/* Linha do Tempo / Stepper */
+.stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.stepper-line {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  right: 40px;
+  height: 2px;
+  background-color: #2b3b77;
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1763a8; /* Azul dos círculos com ícones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.step-label {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Cartão com as Datas */
+.dates-card {
+  background-color: #1a3977; /* Azul do cartão */
+  border-radius: 10px;
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.date-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.date-item p {
+  font-size: 14px;
+  color: #92a4cd;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Serviços</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js para os gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Cabeçalho e Filtros -->
+    <header class="header">
+      <h1>Dashboard de serviços</h1>
+      <div class="filters">
+        <input type="date" value="2026-01-01">
+        <input type="date" value="2026-10-31">
+        <select><option>Todos os técnicos</option></select>
+        <select><option>Todos os status</option></select>
+      </div>
+    </header>
+
+    <!-- Cartões de Métricas (KPIs) -->
+    <section class="kpi-grid">
+      <div class="card">
+        <span>OS abertas</span>
+        <h2>61</h2>
+      </div>
+      <div class="card">
+        <span>OS executadas</span>
+        <h2>92</h2>
+      </div>
+      <div class="card">
+        <span>Faturamento total</span>
+        <h2>R$ 62.678,00</h2>
+      </div>
+      <div class="card">
+        <span>Ticket médio por OS</span>
+        <h2>R$ 681,28</h2>
+      </div>
+    </section>
+
+    <!-- Seção de Gráficos -->
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h3>Evolução dos chamados</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Status das ordens</h3>
+        <canvas id="doughnutChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Tabela de Ordens Recentes -->
+    <section class="table-section">
+      <h3>Ordens de serviço recentes</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ORDEM</th>
+            <th>ABERTURA</th>
+            <th>EQUIPAMENTO</th>
+            <th>TÉCNICO</th>
+            <th>STATUS</th>
+            <th>VALOR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#OS-1166</td>
+            <td>20/09/2026</td>
+            <td>Notebook (Dell Inspiron)</td>
+            <td>Camila Santos</td>
+            <td><span class="badge status-executado">Executado</span></td>
+            <td>R$ 645,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

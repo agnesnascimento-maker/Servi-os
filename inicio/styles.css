@@ -3,27 +3,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: #0b0d3a; /* Fundo azul-escuro */
+  background-color: #050b2c;
   color: #ffffff;
 }
 
 /* Cabeçalho / Navbar */
 .navbar {
-  background-color: #ff8a22; /* Laranja do cabeçalho */
+  background-color: #f78b2d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 50px;
+  padding: 12px 30px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaço entre a imagem pecas.png e o texto */
+  gap: 10px;
   font-weight: bold;
   font-size: 13px;
   color: #000000;
@@ -55,11 +55,106 @@ body {
   cursor: pointer;
 }
 
-/* Container Principal */
+/* Layout que coloca Sidebar e Conteúdo lado a lado */
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 20px;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Estilos do Menu Lateral (Sidebar) */
+.sidebar-container {
+  width: 260px;
+  flex-shrink: 0;
+  background-color: #0a1f52;
+  padding: 25px 15px;
+  border-radius: 6px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-btn {
+  display: block;
+  background-color: #1a4d8c;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.sidebar-btn:hover {
+  background-color: #2361ad;
+}
+
+.sidebar-btn.active {
+  background-color: #2168bd;
+}
+
+/* Caixa de Contato no Menu */
+.contact-box {
+  margin-top: 60px;
+  background-color: #102a6b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-header {
+  background-color: #f78b2d;
+  color: #222222;
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-info {
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact-info i {
+  font-size: 14px;
+}
+
+.contact-info .fa-whatsapp {
+  color: #25d366;
+}
+
+.contact-info .fa-instagram {
+  color: #e1306c;
+}
+
+.contact-info .email-text {
+  font-size: 10px;
+  word-break: break-all;
+}
+
+/* Container Principal (Ajustado para ficar no topo) */
 .container {
-  max-width: 1000px;
-  margin: 70px auto;
-  padding: 0 20px;
+  flex-grow: 1;
+  margin: 0;
+  padding: 20px 10px;
 }
 
 /* Linha do Tempo / Stepper */
@@ -68,14 +163,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .stepper-line {
   position: absolute;
   top: 30px;
-  left: 40px;
-  right: 40px;
+  left: 60px;
+  right: 60px;
   height: 2px;
   background-color: #2b3b77;
   z-index: 1;
@@ -93,7 +189,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #1763a8; /* Azul dos círculos com ícones */
+  background-color: #1763a8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +197,7 @@ body {
 }
 
 .step-label {
-  margin-top: 15px;
+  margin-top: 12px;
   font-size: 12px;
   color: #ffffff;
   font-weight: 600;
@@ -109,9 +205,9 @@ body {
 
 /* Cartão com as Datas */
 .dates-card {
-  background-color: #1a3977; /* Azul do cartão */
+  background-color: #1a3977;
   border-radius: 10px;
-  padding: 40px 30px;
+  padding: 35px 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -119,10 +215,10 @@ body {
 }
 
 .date-item h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .date-item p {

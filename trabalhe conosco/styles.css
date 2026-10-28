@@ -1,0 +1,298 @@
+/* Reset e Estilos Globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #050b2c; /* Fundo azul escuro */
+  color: #ffffff;
+}
+
+/* Cabeçalho / Navbar Laranja Aumentado */
+.navbar {
+  background-color: #f78b2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 50px; /* Aumentado a altura do cabeçalho */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.2;
+}
+
+.logo-img {
+  width: 45px; /* Aumentado ligeiramente */
+  height: 45px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Área do Conteúdo Principal */
+.content-area {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+/* Cartão Branco Principal */
+.page-container {
+  width: 100%;
+  max-width: 880px;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 18px;
+  padding: 45px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+/* Novo Estilo para o Título "TRABALHE CONOSCO" */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.95;
+  margin-bottom: 10px;
+}
+
+.title-top {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1c2b74;
+  letter-spacing: 1px;
+}
+
+.title-bottom {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #2b3990, #14205c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.hero-text h2 {
+  font-size: 15px;
+  color: #444444;
+  margin: 12px 0 18px 0;
+  font-weight: 700;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-list li {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.benefits-list i {
+  color: #d4a373;
+  font-size: 13px;
+}
+
+/* Imagem Inteira (Ajustada sem Cortes) */
+.hero-image {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain; /* Garante que a imagem apareça inteira */
+  display: block;
+}
+
+/* Formulário e Accordions */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-card {
+  background-color: #faf6f5;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.form-card h3 {
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #777777;
+}
+
+.form-group input {
+  width: 100%;
+  height: 38px;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 18px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Accordions Fechados */
+.accordion-item {
+  background-color: #e2e2e2;
+  padding: 14px 20px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555555;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.accordion-item i {
+  color: #d88028;
+}
+
+/* Botão CTA em Baixo */
+.cta-wrapper {
+  margin: 25px 0 35px 0;
+  text-align: center;
+}
+
+.btn-cta {
+  width: 100%;
+  background-color: #f78b2d;
+  color: #ffffff;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(247, 139, 45, 0.3);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-cta:hover {
+  background-color: #e0781e;
+  transform: translateY(-1px);
+}
+
+/* Vantagens */
+.why-join-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.why-join-section h3 {
+  font-size: 14px;
+  color: #2b3990;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.feature-icon {
+  font-size: 28px;
+  color: #f78b2d;
+}
+
+.feature-card h4 {
+  font-size: 13px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 35px;
+  background-color: #dddddd;
+}

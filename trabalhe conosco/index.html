@@ -3,135 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A.S.A.I. Manutenções - Trabalhe Conosco</title>
-  
-  <!-- Font Awesome para ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Ligação para o ficheiro CSS -->
+  <title>Trabalhe Conosco - A.S.A.I. Manutenções</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Cabeçalho / Navbar Laranja Aumentada -->
+  <!-- Cabeçalho / Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="peca2.png" alt="A.S.A.I. Manutenções" class="logo-img">
-      <span>A.S.A.I.<br>MANUTENÇÕES</span>
+      <img src="logo.png" alt="Logo A.S.A.I." class="img-logo">
+      <div class="logo-text">
+       
+      </div>
     </div>
     <nav class="nav-links">
       <a href="#">Início</a>
       <a href="#">Login</a>
       <a href="#">Artigos</a>
       <a href="#">Suporte</a>
-      <span class="menu-icon">&#9776;</span>
+      <button class="menu-hamburguer" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
-  <!-- Layout Principal em Tela Cheia -->
-  <main class="content-area">
-    <div class="page-container full-screen-container">
+  <!-- Container Principal -->
+  <main class="main-container">
+    <section class="card-cadastro">
       
-      <!-- Hero / Apresentação -->
-      <section class="hero-section">
-        <div class="hero-text">
-          <h1 class="main-title">
-            <span class="title-top">TRABALHE</span>
-            <span class="title-bottom">CONOSCO</span>
-          </h1>
-          
-          <h2>Cadastre-se para ser um<br>Técnico Credenciado</h2>
-          
-          <ul class="benefits-list">
-            <li><i class="fa-solid fa-check"></i> Receba chamados de serviços na sua região</li>
-            <li><i class="fa-solid fa-check"></i> Faça a sua própria agenda</li>
-            <li><i class="fa-solid fa-check"></i> Faça a sua própria agenda</li>
+      <!-- Topo do Card -->
+      <div class="card-header">
+        <div class="card-title-area">
+          <h1>TRABALHE<br>CONOSCO</h1>
+          <p class="subtitle">Cadastre-se para ser um<br><strong>Técnico Credenciado</strong></p>
+          <ul class="vantagens-list">
+            <li>✓ Receba chamados de serviços na sua região</li>
+            <li>✓ Faça a sua própria agenda</li>
+            <li>✓ Tenha flexibilidade de horários</li>
           </ul>
         </div>
-
-        <div class="hero-image">
-          <img src="peca2.png" alt="A.S.A.I. Manutenções">
-        </div>
-      </section>
-
-      <!-- Formulário / Etapas -->
-      <section class="form-section">
         
-        <!-- Passo 1: Dados Pessoais -->
-        <div class="form-card">
-          <h3>1. Dados Pessoais</h3>
+        <div class="card-illustration">
+          <img src="peca2.png" alt="Chave de Fenda e Engrenagem" class="img-peca">
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <form class="form-cadastro">
+        
+        <!-- Bloco 1: Dados Pessoais -->
+        <fieldset class="form-section">
+          <legend>1. Dados Pessoais</legend>
           
-          <form class="signup-form">
-            <div class="form-group full-width">
+          <div class="form-grid-2">
+            <div class="input-group full-width">
               <label for="nome">Nome Completo</label>
               <input type="text" id="nome" name="nome">
             </div>
 
-            <div class="form-group full-width">
+            <div class="input-group full-width">
               <label for="email">E-mail</label>
               <input type="email" id="email" name="email">
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="telefone">Telefone/WhatsApp</label>
-                <input type="text" id="telefone" name="telefone">
-              </div>
+            <div class="input-group">
+              <label for="telefone">Telefone/WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone">
+            </div>
 
-              <div class="form-group">
-                <label for="cpf_cnpj">CPF/CNPJ</label>
-                <input type="text" id="cpf_cnpj" name="cpf_cnpj">
+            <div class="input-group">
+              <label for="cpf_cnpj">CPF/CNPJ</label>
+              <input type="text" id="cpf_cnpj" name="cpf_cnpj">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Bloco 2: Localização -->
+        <details class="accordion-section">
+          <summary>2. Localização <span class="arrow">⌄</span></summary>
+          <div class="accordion-content">
+            <div class="input-group">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep">
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade">
+              </div>
+              <div class="input-group">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado">
               </div>
             </div>
-          </form>
-        </div>
-
-        <!-- Passo 2: Localização -->
-        <div class="accordion-item">
-          <span>2. Localização</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-
-        <!-- Passo 3: Especialidades -->
-        <div class="accordion-item">
-          <span>3. Especialidades</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-
-      </section>
-
-      <!-- Botão CTA Movido para Baixo -->
-      <div class="cta-wrapper">
-        <button class="btn-cta">CADASTRAR-SE AGORA</button>
-      </div>
-
-      <!-- Vantagens -->
-      <section class="why-join-section">
-        <h3>POR QUE SE CADASTRAR?</h3>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <i class="fa-solid fa-dollar-sign feature-icon"></i>
-            <h4>Aumento de Renda</h4>
           </div>
+        </details>
 
-          <div class="feature-divider"></div>
-
-          <div class="feature-card">
-            <i class="fa-regular fa-calendar-check feature-icon"></i>
-            <h4>Flexibilidade de Horário</h4>
+        <!-- Bloco 3: Especialidades -->
+        <details class="accordion-section">
+          <summary>3. Especialidades <span class="arrow">⌄</span></summary>
+          <div class="accordion-content">
+            <div class="input-group">
+              <label for="especialidade">Área de Atuação</label>
+              <input type="text" id="especialidade" name="especialidade" placeholder="Ex: Eletricista, Encanador...">
+            </div>
           </div>
+        </details>
 
-          <div class="feature-divider"></div>
+        <!-- Botão de Envio -->
+        <button type="submit" class="btn-submit">CADASTRAR-SE AGORA</button>
 
-          <div class="feature-card">
-            <i class="fa-solid fa-handshake feature-icon"></i>
-            <h4>Suporte Dedicado</h4>
-          </div>
-        </div>
-      </section>
-
-    </div>
+      </form>
+    </section>
   </main>
 
 </body>
